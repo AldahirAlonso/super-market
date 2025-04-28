@@ -2,6 +2,8 @@ package com.platzi.market.persistence.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table
 public class Cliente {
@@ -22,6 +24,9 @@ public class Cliente {
 
     @Column(name = "correo_electronico")
     private String correoElectronico;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compras;
 
     public Integer getIdCliente() {
         return idCliente;

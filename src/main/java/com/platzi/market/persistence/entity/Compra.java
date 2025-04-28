@@ -25,6 +25,10 @@ public class Compra {
 
     private Integer estado;
 
+    @ManyToOne
+    @JoinColumn(name = "id_cliente", insertable = false, updatable = false)
+    private Cliente cliente;
+
     public Integer getIdCompra() {
         return idCompra;
     }
