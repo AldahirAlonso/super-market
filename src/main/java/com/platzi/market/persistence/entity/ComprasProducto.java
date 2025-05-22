@@ -22,9 +22,6 @@ public class ComprasProducto {
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
 
-    @OneToMany(mappedBy = "producto")
-    private List<ComprasProducto> productos;
-
     public ComprasProductoPK getId() {
         return id;
     }
