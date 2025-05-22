@@ -18,6 +18,14 @@ public class Categoria {
 
     private boolean estado;
 
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
+    }
+
     @OneToMany(mappedBy = "categoria")
     private List<Producto> productos;
 
