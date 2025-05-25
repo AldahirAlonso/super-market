@@ -1,7 +1,6 @@
 package com.platzi.market.domain.repository;
 
 import com.platzi.market.domain.Purchase;
-import com.platzi.market.domain.PurchaseItem;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,3 +1,4 @@
+
 package com.platzi.market.persistence.entity;
 
 import jakarta.persistence.*;
